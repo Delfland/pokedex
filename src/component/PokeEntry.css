@@ -1,0 +1,41 @@
+img {
+    width: 200px;
+    padding: 0%;
+    margin: 0%;
+}
+h2{
+    padding: 0%;
+    margin: 0%;
+}
+h4{
+    padding: 0%;
+    margin: 0%;
+}
+p{
+    padding: 0%;
+    margin: 0%;
+}
+ol {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    }
+ol li:before {
+    counter-increment: mycounter;
+    content: counter(mycounter) ". ";
+    }
+ol:first-of-type {
+    counter-reset: mycounter;
+    }
+
+button {
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    font-family: Audiowide;
+    text-align: center;
+    background: 96% / 15% no-repeat whitesmoke;
+    border: 2px solid navy;
+    border-radius: 4px;
+}
