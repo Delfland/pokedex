@@ -83,3 +83,25 @@ h1 {
   gap: 2rem;
   margin-left: 2rem;
 }
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#li {
+  display: flex;
+  flex-direction: column;
+}
+
+#remove {
+  width: 7rem;
+  padding: 5px 5px 5px 5px;
+  margin: 0 0;
+  font-size: 1.1rem;
+  font-family: Audiowide;
+  text-align: center;
+  background: 96% / 15% no-repeat whitesmoke;
+  border: 2px solid navy;
+  border-radius: 4px;
+}

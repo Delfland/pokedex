@@ -44,6 +44,12 @@ const MyPokedex = () => {
         setSelectedPokeball(pokemonsToAdd)
     }
 
+    const onPokemonRemoved = function(pokemon) {
+        const copySelectedPokeball = [...selectedPokeball]
+        copySelectedPokeball.pop(pokemon)
+        setSelectedPokeball(copySelectedPokeball)
+    }
+
     return (
         <>
         <h1>My Pokedex</h1>
@@ -55,7 +61,7 @@ const MyPokedex = () => {
             <div id="aside">
                 <img width="512" alt="Pokebola-pokeball-png-0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/512px-Pokebola-pokeball-png-0.png"/>
                 <h2>My pokeball:</h2>
-                {selectedPokeball? <Pokeball selectedPokeball={selectedPokeball}/> : null}
+                {selectedPokeball? <Pokeball selectedPokeball={selectedPokeball} onPokemonRemoved={onPokemonRemoved}/> : null}
             </div>
         </div>
         </>
