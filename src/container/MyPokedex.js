@@ -44,10 +44,10 @@ const MyPokedex = () => {
         setSelectedPokeball(pokemonsToAdd)
     }
 
-    const onPokemonRemoved = function(pokemon) {
+    const onPokemonRemoved = function(pokemonToRemove) {
         const copySelectedPokeball = [...selectedPokeball]
-        copySelectedPokeball.pop(pokemon)
-        setSelectedPokeball(copySelectedPokeball)
+        const newPokeball = copySelectedPokeball.filter(pokemon => pokemon !== pokemonToRemove)
+        setSelectedPokeball(newPokeball)
     }
 
     return (
